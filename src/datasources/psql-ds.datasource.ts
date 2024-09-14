@@ -4,12 +4,12 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'psqlDs',
   connector: 'postgresql',
-  url: 'postgres://postgres:riyan@localhost/case4',
+  url: 'postgres://postgres:riyan@localhost/case5',
   host: 'localhost',
   port: 5432,
   user: 'postgres',
   password: 'riyan',
-  database: 'case4'
+  database: 'case5'
 };
 
 // Observe application's life cycle to disconnect the datasource when

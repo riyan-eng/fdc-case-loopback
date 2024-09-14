@@ -1,16 +1,16 @@
 import {inject} from '@loopback/core';
 import {DefaultCrudRepository} from '@loopback/repository';
 import {PsqlDsDataSource} from '../datasources';
-import {Example, ExampleRelations} from '../models';
+import {Post, PostRelations} from '../models';
 
-export class ExampleRepository extends DefaultCrudRepository<
-  Example,
-  typeof Example.prototype.id,
-  ExampleRelations
+export class PostRepository extends DefaultCrudRepository<
+  Post,
+  typeof Post.prototype.id,
+  PostRelations
 > {
   constructor(
     @inject('datasources.psqlDs') dataSource: PsqlDsDataSource,
   ) {
-    super(Example, dataSource);
+    super(Post, dataSource);
   }
 }
